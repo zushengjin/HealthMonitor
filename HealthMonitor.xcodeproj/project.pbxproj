@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60F215094CB27B45B9B3D0F /* HealthMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76066411EB47080CA0398E08 /* HealthMonitorApp.swift */; };
+		E32CA63303B2E554A4B2B474 /* DailyMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1E02CF543A9D15807D188 /* DailyMetrics.swift */; };
+		A9AB876A070C737C1E1E0538 /* Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE35A48E065C428FCE172C /* Baseline.swift */; };
+		38B466EA5D249D1F735A314E /* DayStatusRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164D362EA6961A7AB2D5DCF /* DayStatusRecord.swift */; };
+		A21FEE7342E1FEE2D79041BD /* AlertThresholds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FB492C98D910FE0B90B161 /* AlertThresholds.swift */; };
+		F0976AE186849D63BA444316 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51EC27E0ED3BCB46D791DDE /* HealthStore.swift */; };
+		346B7420B9B5D7AE8AB8BBB7 /* BaselineEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61596522C882A8F28C876418 /* BaselineEngine.swift */; };
+		16F7F24DA90B57286F3A121D /* AlertEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA807482B1D28AFBEFE1971B /* AlertEngine.swift */; };
+		5B7EA23853B30B98C9797247 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB515583A1E8B925D01B3C2 /* NotificationService.swift */; };
+		86C4C4D7F4C67019500F63D9 /* MorningCheckCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60133C3DB9ABAFEDA85909B /* MorningCheckCoordinator.swift */; };
+		04FA7C4677C7DCE3EE5D3D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B670FBD9A98BBED5F90D5E38 /* ContentView.swift */; };
+		A2987A1ADFB47C05F86416BD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34F1F7743255A1A992C2293 /* OnboardingView.swift */; };
+		35E105075D56743DBC9EA2B8 /* MorningSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3606F3F65903219131FF3 /* MorningSummaryView.swift */; };
+		9B4E8428705AD4D143126738 /* MetricRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298191051942DDBEB4D0B60B /* MetricRowView.swift */; };
+		629646760360BC1116F06308 /* TrendChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C675D4DB0D475FA3CE4746 /* TrendChartView.swift */; };
+		9D5BEB605F8E37594AD96AED /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6827DFCF4CF9A319B8185D72 /* HistoryView.swift */; };
+		FB90684E69A6C96ED866993E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B4367B873474FE1C68712A /* Assets.xcassets */; };
+		96A4A65FF9CD29A060ED88BD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646E8237C5B389FB22E85843 /* HealthKit.framework */; };
+		044F14934083DB92892F92F5 /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6632F23266F59996B6C093 /* SwiftData.framework */; };
+		D11DD2E77E91813961D6DA1B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4380C6C0A4C68881D4A3C7E6 /* Charts.framework */; };
+		0FEDEB54DC3EBDEC530CDAF8 /* BackgroundTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C59997145A670E37ECB4A23 /* BackgroundTasks.framework */; };
+		E849465169CB23EA160C4D0E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC091590E1F3A1AA0FA92065 /* UserNotifications.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76066411EB47080CA0398E08 /* HealthMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorApp.swift; sourceTree = "<group>"; };
+		DDD1E02CF543A9D15807D188 /* DailyMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMetrics.swift; sourceTree = "<group>"; };
+		8FCE35A48E065C428FCE172C /* Baseline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baseline.swift; sourceTree = "<group>"; };
+		2164D362EA6961A7AB2D5DCF /* DayStatusRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayStatusRecord.swift; sourceTree = "<group>"; };
+		99FB492C98D910FE0B90B161 /* AlertThresholds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertThresholds.swift; sourceTree = "<group>"; };
+		F51EC27E0ED3BCB46D791DDE /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		61596522C882A8F28C876418 /* BaselineEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineEngine.swift; sourceTree = "<group>"; };
+		CA807482B1D28AFBEFE1971B /* AlertEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertEngine.swift; sourceTree = "<group>"; };
+		AEB515583A1E8B925D01B3C2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C60133C3DB9ABAFEDA85909B /* MorningCheckCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningCheckCoordinator.swift; sourceTree = "<group>"; };
+		B670FBD9A98BBED5F90D5E38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B34F1F7743255A1A992C2293 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		47E3606F3F65903219131FF3 /* MorningSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningSummaryView.swift; sourceTree = "<group>"; };
+		298191051942DDBEB4D0B60B /* MetricRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricRowView.swift; sourceTree = "<group>"; };
+		10C675D4DB0D475FA3CE4746 /* TrendChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendChartView.swift; sourceTree = "<group>"; };
+		6827DFCF4CF9A319B8185D72 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B2B4367B873474FE1C68712A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1507F021100E808DBE2FAA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C65B4F7AE4D4021AA8FC16E /* HealthMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthMonitor.entitlements; sourceTree = "<group>"; };
+		646E8237C5B389FB22E85843 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2A6632F23266F59996B6C093 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
+		4380C6C0A4C68881D4A3C7E6 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		7C59997145A670E37ECB4A23 /* BackgroundTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundTasks.framework; path = System/Library/Frameworks/BackgroundTasks.framework; sourceTree = SDKROOT; };
+		DC091590E1F3A1AA0FA92065 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		35A31E3C80FB2C0189419704 /* HealthMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF5BDB0BEAFE176F9629192A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A4A65FF9CD29A060ED88BD /* HealthKit.framework in Frameworks */,
+				044F14934083DB92892F92F5 /* SwiftData.framework in Frameworks */,
+				D11DD2E77E91813961D6DA1B /* Charts.framework in Frameworks */,
+				0FEDEB54DC3EBDEC530CDAF8 /* BackgroundTasks.framework in Frameworks */,
+				E849465169CB23EA160C4D0E /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCF10F76EBF2A74473E9DC4 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D0BD4B75E8C2C174692A5 /* HealthMonitor */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8D0BD4B75E8C2C174692A5 /* HealthMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				76066411EB47080CA0398E08 /* HealthMonitorApp.swift */,
+				9B21A922C1487E69963B16A2 /* Models */,
+				A31D3374946AEC6B0D3886C2 /* Services */,
+				7EFEE443E878286B9201B84F /* Views */,
+				B2B4367B873474FE1C68712A /* Assets.xcassets */,
+				1507F021100E808DBE2FAA00 /* Info.plist */,
+				2C65B4F7AE4D4021AA8FC16E /* HealthMonitor.entitlements */,
+			);
+			path = HealthMonitor;
+			sourceTree = "<group>";
+		};
+		9B21A922C1487E69963B16A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1E02CF543A9D15807D188 /* DailyMetrics.swift */,
+				8FCE35A48E065C428FCE172C /* Baseline.swift */,
+				2164D362EA6961A7AB2D5DCF /* DayStatusRecord.swift */,
+				99FB492C98D910FE0B90B161 /* AlertThresholds.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A31D3374946AEC6B0D3886C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F51EC27E0ED3BCB46D791DDE /* HealthStore.swift */,
+				61596522C882A8F28C876418 /* BaselineEngine.swift */,
+				CA807482B1D28AFBEFE1971B /* AlertEngine.swift */,
+				AEB515583A1E8B925D01B3C2 /* NotificationService.swift */,
+				C60133C3DB9ABAFEDA85909B /* MorningCheckCoordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7EFEE443E878286B9201B84F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B670FBD9A98BBED5F90D5E38 /* ContentView.swift */,
+				B34F1F7743255A1A992C2293 /* OnboardingView.swift */,
+				47E3606F3F65903219131FF3 /* MorningSummaryView.swift */,
+				298191051942DDBEB4D0B60B /* MetricRowView.swift */,
+				10C675D4DB0D475FA3CE4746 /* TrendChartView.swift */,
+				6827DFCF4CF9A319B8185D72 /* HistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A31E3C80FB2C0189419704 /* HealthMonitor.app */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C7B681C8D62CBAC94D51C0 /* HealthMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4F39FAAB29E3FDC0219096 /* Build configuration list for PBXNativeTarget "HealthMonitor" */;
+			buildPhases = (
+				1CDF2F71A52B082132B04DFF /* Sources */,
+				CF5BDB0BEAFE176F9629192A /* Frameworks */,
+				C02F1309AF4906C92F1EAD44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthMonitor;
+			productName = HealthMonitor;
+			productReference = 35A31E3C80FB2C0189419704 /* HealthMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					29C7B681C8D62CBAC94D51C0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = B0D3B7D22269663DD77FCD84 /* Build configuration list for PBXProject "HealthMonitor" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			productRefGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C7B681C8D62CBAC94D51C0 /* HealthMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C02F1309AF4906C92F1EAD44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB90684E69A6C96ED866993E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CDF2F71A52B082132B04DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60F215094CB27B45B9B3D0F /* HealthMonitorApp.swift in Sources */,
+				E32CA63303B2E554A4B2B474 /* DailyMetrics.swift in Sources */,
+				A9AB876A070C737C1E1E0538 /* Baseline.swift in Sources */,
+				38B466EA5D249D1F735A314E /* DayStatusRecord.swift in Sources */,
+				A21FEE7342E1FEE2D79041BD /* AlertThresholds.swift in Sources */,
+				F0976AE186849D63BA444316 /* HealthStore.swift in Sources */,
+				346B7420B9B5D7AE8AB8BBB7 /* BaselineEngine.swift in Sources */,
+				16F7F24DA90B57286F3A121D /* AlertEngine.swift in Sources */,
+				5B7EA23853B30B98C9797247 /* NotificationService.swift in Sources */,
+				86C4C4D7F4C67019500F63D9 /* MorningCheckCoordinator.swift in Sources */,
+				04FA7C4677C7DCE3EE5D3D62 /* ContentView.swift in Sources */,
+				A2987A1ADFB47C05F86416BD /* OnboardingView.swift in Sources */,
+				35E105075D56743DBC9EA2B8 /* MorningSummaryView.swift in Sources */,
+				9B4E8428705AD4D143126738 /* MetricRowView.swift in Sources */,
+				629646760360BC1116F06308 /* TrendChartView.swift in Sources */,
+				9D5BEB605F8E37594AD96AED /* HistoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		62C0502E9DD2F4A0E153A290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = gnu++20;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"DEBUG=1", "$(inherited)",
+			);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFS_AUTOMATOR = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+			};
+			name = Debug;
+		};
+		A1076DB52F6D567F23A74575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = gnu++20;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFS_AUTOMATOR = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33F0C6CCEF74F8BF16BB4617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthMonitor/HealthMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HealthMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)", "@executable_path/Frameworks",
+			);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.healthmonitor.app;
+				PRODUCT_NAME = $(TARGET_NAME);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A7FBA4F38FC1C6EE9D9D943B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthMonitor/HealthMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HealthMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)", "@executable_path/Frameworks",
+			);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.healthmonitor.app;
+				PRODUCT_NAME = $(TARGET_NAME);
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0D3B7D22269663DD77FCD84 /* Build configuration list for PBXProject "HealthMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C0502E9DD2F4A0E153A290 /* Debug */,
+				A1076DB52F6D567F23A74575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4F39FAAB29E3FDC0219096 /* Build configuration list for PBXNativeTarget "HealthMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F0C6CCEF74F8BF16BB4617 /* Debug */,
+				A7FBA4F38FC1C6EE9D9D943B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}

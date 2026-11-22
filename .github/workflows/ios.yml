@@ -1,0 +1,43 @@
+# Builds an unsigned .ipa on GitHub's free macOS runner, so the app can be
+# built without owning a Mac. Push this folder to a GitHub repo as the repo
+# root (this folder contains HealthMonitor.xcodeproj), and the workflow runs
+# on every push to main. Download the HealthMonitor-unsigned-ipa artifact,
+# then install it on an iPhone from a Windows PC with Sideloadly and a free
+# Apple ID (re-install every 7 days to renew).
+name: Build iOS (unsigned)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build (no codesigning)
+        run: |
+          xcodebuild -project HealthMonitor.xcodeproj \
+            -scheme HealthMonitor \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Package unsigned IPA
+        run: |
+          APP_PATH=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -name "HealthMonitor.app" -type d | head -1)
+          test -d "$APP_PATH"
+          mkdir -p Payload
+          cp -r "$APP_PATH" Payload/
+          zip -r HealthMonitor-unsigned.ipa Payload
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: HealthMonitor-unsigned-ipa
+          path: HealthMonitor-unsigned.ipa
