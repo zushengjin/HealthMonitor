@@ -23,7 +23,7 @@ final class MorningCheckCoordinator {
     private lazy var container: ModelContainer = {
         // The default store is shared with the UI's container.
         // swiftlint:disable:next force_try
-        try! ModelContainer(for: [Baseline.self, DayStatusRecord.self])
+        try! ModelContainer(for: Baseline.self, DayStatusRecord.self)
     }()
 
     /// Ask iOS for a background slot tomorrow morning. Best effort: iOS

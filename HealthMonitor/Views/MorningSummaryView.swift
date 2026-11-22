@@ -23,7 +23,7 @@ struct MorningSummaryView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     statusSection
 
-                    if healthStore.authorizationStatus == .denied {
+                    if healthStore.authorizationStatus == .sharingDenied {
                         accessDeniedSection
                     }
 
